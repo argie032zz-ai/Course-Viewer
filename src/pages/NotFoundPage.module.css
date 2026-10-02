@@ -1,0 +1,144 @@
+.notFoundPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 50px 20px;
+}
+/* .notFoundPage h1 {
+  font-size: 2.5em;
+  color: #666;
+  margin-bottom: 20px;
+} */
+.notFoundPage p {
+  font-size: 1.2em;
+  color: #d9534f;
+  margin-bottom: 2em;
+}
+.notFoundPage img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+}
+/* .kkk {
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+} */
+.notFoundPage > .kkk {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+}
+.notFoundPage > .kkk::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00ccff;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.notFoundPage > .kkk::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: color-mix(in srgb, black 15%, #249a2c);
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.notFoundPage > .kkk:hover {
+  color: #fff;
+  &::before {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .notFoundPage h1 {
+    font-size: 1.5em;
+  }
+  .notFoundPage p {
+    font-size: 0.7em;
+  }
+  .notFoundPage a {
+    font-size: 0.7em;
+  }
+}
+
+/* .notFoundPage a {
+  border: 0;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 16px 45px;
+  background: #090b10;
+  isolation: isolate;
+  color: #fff;
+  position: relative;
+}
+.notFoundPage a:before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 14px;
+
+  background:
+    conic-gradient(
+      #00eaff,
+      #7c3cff,
+      transparent 35%,
+      transparent 65%,
+      #00eaff
+    );
+  animation: electric 1.5s linear infinite;
+  z-index: -2;
+}
+.notFoundPage a::after{
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 10px;
+  background: #090b10;
+  z-index: -1;
+}
+@keyframes electric {
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .kkk::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffa502;
+  transform-origin: left;
+  transition: transform .5s cubic-bezier(.86,0,.07,1);
+  z-index: 1;
+}
+.kkk:hover::after{
+  src: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnP9TEvR1tN7OuWD9P7QcgBQx56EFesh1pIXldqSRMJw&s);
+  transform: skewX(-45deg) translateX(150%);
+} */

@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 1. Default Light Theme Colors */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --accent-color: #3b82f6;
+  --card-bg: #f3f4f6;
+}
+
+/* 2. Overrides for Dark Theme */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f3f4f6;
+  --accent-color: #60a5fa;
+  --card-bg: #1e1e1e;
+}
+
+/* 3. Global Application of Variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: sans-serif;
+  /* Adds a smooth animation when switching themes */
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* 4. Use variables throughout your UI components */
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+}

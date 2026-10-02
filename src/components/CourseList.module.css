@@ -1,0 +1,38 @@
+.courseList {
+  list-style: none;
+  padding: 0;
+}
+
+.courseItem {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.courseItem:hover {
+  background-color: #f0f0f0;
+}
+
+.courseItem strong {
+  font-size: 1.2em;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .courseItem strong {
+  font-size: .7em;
+  }
+  /* h2 {
+    font-size: 1em;
+  } */
+  .courseItem:active{
+    background-color: #333;
+  }
+  /* .courseItem::after{
+    background-color: #333;
+  } */
+}

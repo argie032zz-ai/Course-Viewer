@@ -1,0 +1,42 @@
+.courseDetails {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.courseDetails h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.courseDetails h3 {
+  color: #555;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.courseDetails p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: .8em;
+  }
+  .courseDetails > h2 {
+    font-size: 1em;
+  }
+  .courseDetails > h3 {
+    font-size: 1em;
+  }
+  .courseDetails > p {
+    font-size: .7em;
+  }
+  p{
+    font-size: .7em;
+  }
+}

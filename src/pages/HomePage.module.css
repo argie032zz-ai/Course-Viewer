@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Neonderthaw";
+  src: url("../assets/Neonderthaw/Neonderthaw-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.homePage h1 {
+  font-family: "Neonderthaw", cursive;
+  font-size: 5em;
+  color: #333;
+  margin-bottom: 20px;
+  /* color: #fff; */
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #ccc,
+    0 0 20px #fff,
+    0 0 40px #bbb,
+    0 0 80px #ccc,
+    0 0 90px #fff,
+    0 0 100px #cfc,
+    0 0 150px #cfb;
+}
+
+.homePage p {
+  font-size: 1.5em;
+  color: #666;
+
+  
+  /* text-transform: uppercase;*/
+  background-image: linear-gradient(
+    -225deg,
+    #ccc 0%,
+    #fff 29%,
+    #565555 67%,
+    #333 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #333;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      /* font-size: 190px; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media (max-width: 768px) {
+  .homePage h1 {
+  font-size: 2.5em;
+  }
+  .homePage p {
+  font-size: 1em;
+  }
+}
